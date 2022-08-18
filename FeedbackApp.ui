@@ -1,0 +1,1214 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.1">
+  <object class="ttk.Notebook" id="main_notebook">
+    <property name="height">450</property>
+    <property name="takefocus">true</property>
+    <property name="width">600</property>
+    <layout manager="grid">
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Notebook.Tab" id="login_tab">
+        <property name="sticky">n</property>
+        <property name="text" translatable="yes">Login</property>
+        <child>
+          <object class="ttk.Frame" id="login">
+            <property name="height">500</property>
+            <property name="takefocus">true</property>
+            <property name="width">500</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">nsew</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="lbl_title">
+                <property name="background">#000000</property>
+                <property name="font">{15} 24 {bold}</property>
+                <property name="foreground">#00f900</property>
+                <property name="text" translatable="yes">Feedback System Login</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_user">
+                <property name="background">#000000</property>
+                <property name="font">{1} 20 {}</property>
+                <property name="foreground">#00f900</property>
+                <property name="text" translatable="yes">Username:</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="text_user">
+                <property name="font">{1} 20 {}</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_pwd">
+                <property name="background">#000000</property>
+                <property name="font">{1} 20 {}</property>
+                <property name="foreground">#00f900</property>
+                <property name="text" translatable="yes">Password</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">3</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="text_pwd">
+                <property name="font">{2} 20 {}</property>
+                <property name="show">•</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">4</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_confirm">
+                <property name="background">#000000</property>
+                <property name="font">{1} 20 {}</property>
+                <property name="foreground">#00f900</property>
+                <property name="text" translatable="yes">Confirm Password:</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">5</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="text_confirm">
+                <property name="font">{1} 20 {}</property>
+                <property name="show">•</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">6</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_login">
+                <property name="text" translatable="yes">Login</property>
+                <property name="width">15</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">7</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="error1">
+                <property name="background">#ff0c00</property>
+                <property name="foreground">#0b32fe</property>
+                <property name="text" translatable="yes">ERROR</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">8</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Notebook.Tab" id="execution_log_tab">
+        <property name="sticky">n</property>
+        <property name="text" translatable="yes">Execution Log</property>
+        <child>
+          <object class="ttk.Frame" id="execution_log">
+            <property name="height">500</property>
+            <property name="takefocus">true</property>
+            <property name="width">500</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">n</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="lbl_exec_log">
+                <property name="background">#000000</property>
+                <property name="font">{2} 24 {bold}</property>
+                <property name="foreground">#00f900</property>
+                <property name="text" translatable="yes">Execution Log</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_complete">
+                <property name="state">disabled</property>
+                <property name="text" translatable="yes">Complete</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="row">3</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_force_stop">
+                <property name="text" translatable="yes">Force Stop</property>
+                <layout manager="grid">
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">3</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_logout2">
+                <property name="text" translatable="yes">Logout</property>
+                <layout manager="grid">
+                  <property name="column">2</property>
+                  <property name="propagate">True</property>
+                  <property name="row">3</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="pygubu.builder.widgets.tkinterscrolledtext" id="text_execution_log">
+                <property name="background">#0432ff</property>
+                <property name="foreground">#feffff</property>
+                <property name="height">17</property>
+                <property name="insertunfocussed">hollow</property>
+                <property name="state">disabled</property>
+                <property name="text" translatable="yes">Log of executed commands and errors:</property>
+                <property name="width">50</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Progressbar" id="progressbar">
+                <property name="length">350</property>
+                <property name="orient">horizontal</property>
+                <layout manager="grid">
+                  <property name="column">1</property>
+                  <property name="propagate">True</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Notebook.Tab" id="choice_tab">
+        <property name="sticky">n</property>
+        <property name="text" translatable="yes">Data Source</property>
+        <child>
+          <object class="ttk.Frame" id="choice_page">
+            <property name="height">500</property>
+            <property name="width">500</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="lbl_choice_title">
+                <property name="font">{2} 24 {bold}</property>
+                <property name="text" translatable="yes">Pick a source for your data</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.2</property>
+                  <property name="rely">0.21</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_spreadsheet">
+                <property name="image">sheetslogo.png</property>
+                <property name="text" translatable="yes">Google Spreadsheet</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">250</property>
+                  <property name="relx">0.0</property>
+                  <property name="rely">0.35</property>
+                  <property name="width">250</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_audio">
+                <property name="image">speakerlogo.png</property>
+                <property name="text" translatable="yes">.mp3 Audio File</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">250</property>
+                  <property name="relx">0.5</property>
+                  <property name="rely">0.35</property>
+                  <property name="width">250</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_back1">
+                <property name="text" translatable="yes">← Back</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.0</property>
+                  <property name="rely">0.08</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_logout3">
+                <property name="text" translatable="yes">Logout</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.81</property>
+                  <property name="rely">0.08</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Notebook.Tab" id="sheets_tab">
+        <property name="text" translatable="yes">Sheets Analysis</property>
+        <child>
+          <object class="ttk.Frame" id="sheets_analyzer">
+            <property name="height">500</property>
+            <property name="width">500</property>
+            <layout manager="grid">
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="lbl_sheets_title">
+                <property name="font">{2} 24 {bold}</property>
+                <property name="text" translatable="yes">Sheets Analyzer</property>
+                <layout manager="place">
+                  <property name="relx">0.35</property>
+                  <property name="rely">0.03</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_sheet_name">
+                <property name="text" translatable="yes">Enter the Google Sheets title:</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.35</property>
+                  <property name="rely">0.13</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Text" id="text_title">
+                <property name="height">10</property>
+                <property name="text" translatable="yes">Enter the Google Sheet's name and ensure edit access is provided to:
+
+anvay-971@avian-insight-318815.iam.gserviceaccount.com
+</property>
+                <property name="width">50</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">100</property>
+                  <property name="relx">0.34</property>
+                  <property name="rely">0.2</property>
+                  <property name="width">200</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_column">
+                <property name="text" translatable="yes">Enter Column Letter [1 character]:</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.34</property>
+                  <property name="rely">0.47</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="text_column">
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.47</property>
+                  <property name="rely">0.53</property>
+                  <property name="width">50</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Message" id="message_title">
+                <property name="text" translatable="yes">Choose where to download the output folder by the same name as your Google Sheets' title:</property>
+                <property name="width">200</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.34</property>
+                  <property name="rely">0.63</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="pygubu.builder.widgets.pathchooserinput" id="pathchooserinput1">
+                <property name="type">file</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.33</property>
+                  <property name="rely">0.78</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_analyse">
+                <property name="text" translatable="yes">Analyse</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.43</property>
+                  <property name="rely">0.86</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_back2">
+                <property name="text" translatable="yes">← Back</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.05</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_logout4">
+                <property name="text" translatable="yes">Logout</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.79</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="error2">
+                <property name="background">black</property>
+                <property name="foreground">red</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.32</property>
+                  <property name="rely">0.95</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Checkbutton" id="checkbutton1">
+                <property name="text" translatable="yes">Add Reliability Report?</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Notebook.Tab" id="audio_tab">
+        <property name="text" translatable="yes">Audio Analysis</property>
+        <child>
+          <object class="ttk.Frame" id="audio_analyzer">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="lbl_audio_title">
+                <property name="font">{2} 24 {bold}</property>
+                <property name="text" translatable="yes">Audio Analyzer</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.35</property>
+                  <property name="rely">0.05</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_audio_path">
+                <property name="text" translatable="yes">Pick an audio path:</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.4</property>
+                  <property name="rely">0.17</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="pygubu.builder.widgets.pathchooserinput" id="audio_path">
+                <property name="type">file</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.32</property>
+                  <property name="rely">0.23</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Message" id="message_output">
+                <property name="text" translatable="yes">Choose where to download the output folder by the same name as your Google Sheets:</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.38</property>
+                  <property name="rely">0.36</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="pygubu.builder.widgets.pathchooserinput" id="output_path">
+                <property name="type">file</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.32</property>
+                  <property name="rely">0.59</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btnAnalyse">
+                <property name="text" translatable="yes">Analyse</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.42</property>
+                  <property name="rely">0.7</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_back3">
+                <property name="text" translatable="yes">← Back</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.05</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_logout5">
+                <property name="text" translatable="yes">Logout</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.79</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="error3">
+                <property name="background">black</property>
+                <property name="foreground">red</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.32</property>
+                  <property name="rely">0.8</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Notebook.Tab" id="generate_report_tab">
+        <property name="text" translatable="yes">Reliability Report</property>
+        <child>
+          <object class="ttk.Frame" id="reliability_report">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+            <child>
+              <object class="ttk.Button" id="btn_back4">
+                <property name="text" translatable="yes">← Back</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.05</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_logout6">
+                <property name="text" translatable="yes">Logout</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.79</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_title_report">
+                <property name="font">{2} 24 {bold}</property>
+                <property name="style">Toolbutton</property>
+                <property name="takefocus">false</property>
+                <property name="text" translatable="yes">Reliability Report</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.34</property>
+                  <property name="rely">0.05</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lblfirstcol">
+                <property name="text" translatable="yes">From what column (char) do ratings start?</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.29</property>
+                  <property name="rely">0.17</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="text_start_col">
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.45</property>
+                  <property name="rely">0.24</property>
+                  <property name="width">50</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_end_col">
+                <property name="text" translatable="yes">At what column (char) do ratings finish?</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.3</property>
+                  <property name="rely">0.33</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="text_end_col">
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.45</property>
+                  <property name="rely">0.4</property>
+                  <property name="width">50</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_min_rating">
+                <property name="text" translatable="yes">What is the smallest possible rating?</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.32</property>
+                  <property name="rely">0.49</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="text_min_value">
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.45</property>
+                  <property name="rely">0.56</property>
+                  <property name="width">50</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_max_rating">
+                <property name="font">{2} 12 {underline}</property>
+                <property name="text" translatable="yes">What is the largest possible rating?</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.33</property>
+                  <property name="rely">0.65</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="text_max_value">
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.45</property>
+                  <property name="rely">0.72</property>
+                  <property name="width">50</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Checkbutton" id="checkbutton_is_ranked">
+                <property name="text" translatable="yes">Do you want the questions to be ranked?*</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.27</property>
+                  <property name="rely">0.79</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_submit_report">
+                <property name="text" translatable="yes">Submit</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.42</property>
+                  <property name="rely">0.86</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_rank_instructions_link">
+                <property name="font">{2} 14 {bold italic}</property>
+                <property name="text" translatable="yes">* What is the question rank system?</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.29</property>
+                  <property name="rely">0.93</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Notebook.Tab" id="filter_tab">
+        <property name="text" translatable="yes">Emotion Filters
+</property>
+        <child>
+          <object class="ttk.Frame" id="filtered_questions">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="lbl_emotion_filters">
+                <property name="font">{2} 24 {bold}</property>
+                <property name="text" translatable="yes">Emotion Filters</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.37</property>
+                  <property name="rely">0.05</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_back5">
+                <property name="text" translatable="yes">← Back</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.05</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_logout7">
+                <property name="text" translatable="yes">Logout</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.79</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox_type">
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.05</property>
+                  <property name="rely">0.23</property>
+                  <property name="width">100</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_type">
+                <property name="text" translatable="yes">Sort by:</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.09</property>
+                  <property name="rely">0.17</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_choice">
+                <property name="text" translatable="yes">Which emotion/question?</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.38</property>
+                  <property name="rely">0.17</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox_choice">
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.28</property>
+                  <property name="rely">0.23</property>
+                  <property name="width">300</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_order">
+                <property name="text" translatable="yes">Order:</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.83</property>
+                  <property name="rely">0.17</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="combobox_order">
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.79</property>
+                  <property name="rely">0.23</property>
+                  <property name="width">100</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Treeview" id="table">
+                <property name="selectmode">extended</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">300</property>
+                  <property name="relx">0.05</property>
+                  <property name="rely">0.31</property>
+                  <property name="width">587</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Notebook.Tab" id="m_menu">
+        <property name="text" translatable="yes">Main Menu</property>
+        <child>
+          <object class="ttk.Frame" id="main_menu">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="lbl_main_menu">
+                <property name="font">{2} 24 {bold}</property>
+                <property name="text" translatable="yes">Main Menu</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.37</property>
+                  <property name="rely">0.05</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_back6">
+                <property name="text" translatable="yes">← Back</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.05</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_logout8">
+                <property name="text" translatable="yes">Logout</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.79</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="cb_reliability">
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.33</property>
+                  <property name="rely">0.33</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Combobox" id="cb_questions">
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.27</property>
+                  <property name="rely">0.59</property>
+                  <property name="width">300</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_rel">
+                <property name="font">{2} 18 {bold}</property>
+                <property name="text" translatable="yes">Include Reliability?</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.35</property>
+                  <property name="rely">0.22</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_questions">
+                <property name="font">{2} 18 {bold}</property>
+                <property name="text" translatable="yes">Which question to inspect?</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.31</property>
+                  <property name="rely">0.48</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_submit_graph">
+                <property name="text" translatable="yes">View Graphs</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.39</property>
+                  <property name="rely">0.74</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Notebook.Tab" id="g_viewer">
+        <property name="text" translatable="yes">Graph Viewer</property>
+        <child>
+          <object class="ttk.Frame" id="graph_viewer">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="lbl_graph_viewer">
+                <property name="font">{2} 24 {bold}</property>
+                <property name="text" translatable="yes">Graph Viewer: </property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.36</property>
+                  <property name="rely">0.05</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_back7">
+                <property name="text" translatable="yes">← Back</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.05</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_logout9">
+                <property name="text" translatable="yes">Logout</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.79</property>
+                  <property name="rely">0.04</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_prev_graph">
+                <property name="text" translatable="yes">⏮ Previous</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.05</property>
+                  <property name="rely">0.86</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_next_graph">
+                <property name="text" translatable="yes">Next ⏭</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">40</property>
+                  <property name="relx">0.79</property>
+                  <property name="rely">0.86</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="tk.Canvas" id="current_graph">
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="height">250</property>
+                  <property name="relx">0.23</property>
+                  <property name="rely">0.28</property>
+                  <property name="width">400</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="lbl_graph_title">
+                <property name="font">{2} 16 {italic underline}</property>
+                <property name="text" translatable="yes">Title</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.3</property>
+                  <property name="rely">0.88</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_aggregate">
+                <property name="text" translatable="yes">Aggregate Graph</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.15</property>
+                  <property name="rely">0.18</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_scatter">
+                <property name="text" translatable="yes">Scatter Graph</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.41</property>
+                  <property name="rely">0.18</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="btn_individual">
+                <property name="text" translatable="yes">Individual Graphs</property>
+                <layout manager="place">
+                  <property name="anchor">nw</property>
+                  <property name="relx">0.64</property>
+                  <property name="rely">0.18</property>
+                  <property name="x">0</property>
+                  <property name="y">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
